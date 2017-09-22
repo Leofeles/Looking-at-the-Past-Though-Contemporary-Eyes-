@@ -48,6 +48,38 @@
     color: $background;
     background-color: $color;
   }
+  body {
+  background: #eee;
+}
+
+div {
+  position: relative;
+  margin: 25vmin auto 0;
+  width: 50vmin;
+  height: 50vmin;
+  border-radius: 18.5%;
+  box-shadow: 0 0 7.5vmin rgba(0, 0, 0, 0.5);
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+}
+div:before, div:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35vmin;
+  height: 35vmin;
+  border: solid 2.5vmin #fff;
+  transform: translate(-50%, -50%);
+  content: '';
+}
+div:before {
+  border-radius: 18.5%;
+}
+div:after {
+  width: 15.625vmin;
+  height: 15.625vmin;
+  border-radius: 50%;
+  box-shadow: 10.15625vmin -10.15625vmin 0 -8.125vmin #fff;
+}
 }
 @mixin transition-all() {
   -webkit-transition: all 0.2s;
